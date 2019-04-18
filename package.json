@@ -4,7 +4,8 @@
   "description": "louie fitzpatrick web dev portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/assets/css --recursive"
+    "sass": "node-sass -w scss/ -o dist/assets/css --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,9 @@
   "bugs": {
     "url": "https://github.com/Fitzpa/SinglePagePortfolio/issues"
   },
-  "homepage": "https://github.com/Fitzpa/SinglePagePortfolio#readme",
+  "homepage": "https://Fitzpa.github.io/SinglePagePortfolio",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }
