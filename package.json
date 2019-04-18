@@ -1,0 +1,22 @@
+{
+  "name": "singlepageportfolio",
+  "version": "1.0.0",
+  "description": "louie fitzpatrick web dev portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/assets/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fitzpa/SinglePagePortfolio.git"
+  },
+  "author": "louie fitzpatrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fitzpa/SinglePagePortfolio/issues"
+  },
+  "homepage": "https://github.com/Fitzpa/SinglePagePortfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

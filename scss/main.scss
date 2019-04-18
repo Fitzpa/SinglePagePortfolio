@@ -1,0 +1,277 @@
+@import "config";
+
+$primary-color: #003737;
+$secondary-color: #eece1a;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $primary-color;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  line-height: 1.5;
+}
+
+//Headings
+h1,
+h2,
+h3 {
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 6rem;
+  }
+
+  &.sm-heading {
+    font-size: 1.5rem;
+    margin-top: 4vh;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  margin-top: 14vh;
+  padding: 8rem;
+  height: 100%;
+
+  .icons {
+    font-size: 2rem;
+    margin-top: 3rem;
+    a {
+      padding: 0 3rem;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
+}
+
+// Work
+.projects {
+  display: grid;
+  grid-gap: 2rem;
+  padding: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut();
+    }
+  }
+}
+
+//Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: $primary-color;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
+}
+
+/* ------------ CONTACT ME STYLES ------------------- */
+.forms {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: auto;
+}
+
+main#contact {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  margin-right: 4em;
+  margin-left: 4em;
+  display: grid;
+  grid-template-columns: 3fr;
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper > * {
+  padding: 3em;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: left;
+  margin: 0 0 1rem 0;
+}
+
+.company-info img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company-info {
+  background: #003333;
+}
+
+.contact {
+  background: #004d4d;
+}
+
+/* ----FORM STYLES---- */
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form .submit {
+  grid-column: 1fr;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #003333;
+}
+
+.contact form button {
+  background: #003333;
+  color: #fef6eb;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #ff3333;
+  color: #000;
+  outline: 0;
+  transition: all 0.3s ease-out;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #ff3333;
+  color: #fef6eb;
+  margin-bottom: 10px;
+  display: none;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #001a1a;
+  color: #fef6eb;
+  height: 60px;
+}
+
+.container {
+  width: 100%;
+//   height: 100%;
+  min-height: calc(100vh - 60px);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section#home {
+  background: url("/dist/assets/images/bg.jpg") no-repeat center center/ cover;
+}
+
+@import "mobile";

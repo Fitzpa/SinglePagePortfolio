@@ -1,0 +1,68 @@
+// Widescreens
+@include mediaXL {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0, 100px;
+  }
+}
+
+// Desktops
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0, 100px;
+  }
+}
+
+// Tablets and Small Laptops
+@include mediaMd {
+    body {
+        width: 100%;
+    }
+  main {
+    align-items: center;
+    text-align: center;
+    margin-top: 14vh;
+    padding: 8rem;
+    height: 100%;
+
+    .icons {
+      font-size: 2rem;
+      margin-top: 3rem;
+      a {
+        padding: 0 1rem;
+        &:hover {
+          color: $secondary-color;
+          @include easeOut();
+        }
+      }
+    }
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section {
+    height: 100%;
+  }
+}
+
+// Smart Phones
+@include mediaSm {
+  h1 {
+    font-weight: 400;
+
+    &.lg-heading {
+      font-size: 5rem;
+    }
+  }
+  section {
+    height: 100%;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Louie Fitzpatrick</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="home">
+        <main id="home">
+          <h1 class="lg-heading">
+            Louie <span class="text-secondary">Fitzpatrick</span>
+          </h1>
+          <h2 class="sm-heading">Web Developer, Programmer & Entrepeneur</h2>
+          <div class="icons">
+            <a href="">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/louie-fitzpatrick/">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/Fitzpa">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </main>
+      </section>
+      <!-- ------------------------------------Work-------------------------------------- -->
+      <section id="work">
+        <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+        <h2 class="sm-heading">Check out some of my projects...</h2>
+        <div class="projects">
+          <div class="item">
+            <a href="https://fitzpa.github.io/LouieGroupProject/">
+              <img src="assets/images/GroupAPI.jpg" alt="Api Project" />
+            </a>
+            <a
+              href="https://fitzpa.github.io/LouieGroupProject/"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i>API + Firebase Project
+            </a>
+            <a
+              href="https://github.com/Fitzpa/LouieGroupProject"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i>Github
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="https://fitzpa.github.io/Giphy-API-Project/">
+              <img src="assets/images/giphyProject2.jpg" alt="Project" />
+            </a>
+            <a
+              href="https://fitzpa.github.io/Giphy-API-Project/"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i>Giphy API Project
+            </a>
+            <a
+              href="https://github.com/Fitzpa/Giphy-API-Project"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i>Github
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="https://fitzpa.github.io/TriviaGame/">
+              <img src="assets/images/TriviaGame.jpg" alt="Project" />
+            </a>
+            <a href="https://fitzpa.github.io/TriviaGame/" class="btn-light">
+              <i class="fas fa-eye"></i>Trivia Game Project
+            </a>
+            <a href="https://github.com/Fitzpa/TriviaGame" class="btn-dark">
+              <i class="fab fa-github"></i>Github
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="https://fitzpa.github.io/Word-Guess-Game/">
+              <img src="assets/images/NintendoHangman.jpg" alt="Project" />
+            </a>
+            <a
+              href="https://fitzpa.github.io/Word-Guess-Game/"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i>Hangman Project
+            </a>
+            <a
+              href="https://github.com/Fitzpa/Word-Guess-Game"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i>Github
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h1>Full-Stack Web Developer</h1>
+        <p>
+          Passionate about technology
+        </p>
+      </section>
+      <section id="contact">
+        <main id="contact">
+          <h1 class="lg-heading">
+            Contact <span class="text-secondary">Me</span>
+          </h1>
+          <h2 class="sm-heading">Here is how to reach me...</h2>
+          <div class="alert">Your message has been sent</div>
+          <!-- <div class="boxes"> -->
+          <div class="wrapper">
+            <div class="company-info">
+              <img
+                src="assets/images/LouieSm.jpg"
+                alt="Louie Fitzpatrick"
+                class="bio-image"
+              />
+            </div>
+            <div class="contact">
+              <form id="contactForm">
+                <p>
+                  <label>Name</label>
+                  <input type="text" name="name" id="name" required />
+                </p>
+                <p>
+                  <label>Company</label>
+                  <input type="text" name="company" id="company" />
+                </p>
+                <p>
+                  <label>Email</label>
+                  <input type="email" name="email" id="email" required />
+                </p>
+                <p class="full">
+                  <label>Message</label>
+                  <textarea name="message" rows="5" id="message"></textarea>
+                </p>
+                <p class="submit">
+                  <button type="submit">Submit</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </main>
+      </section>
+    </div>
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
