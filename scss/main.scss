@@ -1,7 +1,7 @@
 @import "config";
 
 $primary-color: #003737;
-$secondary-color: #eece1a;
+$secondary-color: skyblue;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -15,7 +15,7 @@ $secondary-color: #eece1a;
 
 body {
   background: $primary-color;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   line-height: 1.5;
 }
@@ -146,7 +146,11 @@ ul {
 .company-info img {
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: solid 3px skyblue;
 }
 
 .company-info {
@@ -223,7 +227,7 @@ ul {
 
 .container {
   width: 100%;
-//   height: 100%;
+  //   height: 100%;
   min-height: calc(100vh - 60px);
 }
 
@@ -271,7 +275,13 @@ section {
 }
 
 section#home {
-  background: url("/dist/assets/images/bg.jpg") no-repeat center center/ cover;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section#about {
+  background: #004d4d;
 }
 
 @import "mobile";

@@ -5,7 +5,7 @@
 
 body {
   background: #003737;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   line-height: 1.5; }
 
@@ -30,7 +30,7 @@ a {
   text-decoration: none; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: skyblue; }
 
 main {
   margin-top: 14vh;
@@ -42,7 +42,7 @@ main {
     main .icons a {
       padding: 0 3rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: skyblue;
         transition: all 0.5s ease-out; }
 
 .projects {
@@ -52,10 +52,10 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px skyblue solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: skyblue;
       transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
@@ -64,7 +64,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: skyblue;
     color: #003737; }
 
 .btn-dark {
@@ -108,7 +108,12 @@ ul {
 .company-info img {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto; 
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: solid 3px skyblue;
+}
 
 .company-info {
   background: #003333; }
@@ -149,7 +154,7 @@ ul {
 
 .contact form button:hover,
 .contact form button:focus {
-  background: #ff3333;
+  background: skyblue;
   color: #000;
   outline: 0;
   transition: all 0.3s ease-out; }
@@ -157,7 +162,7 @@ ul {
 .alert {
   text-align: center;
   padding: 10px;
-  background: #ff3333;
+  background: skyblue;
   color: #fef6eb;
   margin-bottom: 10px;
   display: none; }
@@ -211,7 +216,15 @@ section {
   scroll-snap-align: center; }
 
 section#home {
-  background: url("/dist/assets/images/bg.jpg") no-repeat center center/cover; }
+  background-image: url("../images/bg.jpg");
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section#about {
+  background: #004d4d;
+}
+
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -238,7 +251,7 @@ section#home {
       main .icons a {
         padding: 0 1rem; }
         main .icons a:hover {
-          color: #eece1a;
+          color: skyblue;
           transition: all 0.5s ease-out; }
     main .lg-heading {
       line-height: 1;
